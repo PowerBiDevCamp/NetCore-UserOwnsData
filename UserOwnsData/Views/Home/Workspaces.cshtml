@@ -1,0 +1,34 @@
+﻿@model IList<Microsoft.PowerBI.Api.Models.Group>
+
+@{
+  var workspaces = Model;
+}
+
+<div class="workspaces-toolbar">
+  <a id="create-workspace-button" class="btn btn-sm" asp-controller="Home" asp-action="CreateWorkspace"><i class="fa fa-industry"></i>Create Workspace</a>
+</div>
+
+<h2>Workspaces</h2>
+
+<table class="table table-bordered table-hover table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Embed</th>
+      <th>View</th>
+      <th>Delete</th>
+      <th>View in PBI</th>
+    </tr>
+  </thead>
+  @foreach (var workspace in workspaces) {
+    <tr>
+      <td>@workspace.Name</td>
+      <td>@workspace.Id</td>
+      <td><a href="Embed/?WorkspaceId=@workspace.Id" class="nav nav-link"><i class="fa fa-bar-chart"></i>Embed</a></td>
+      <td><a href="Workspace/?WorkspaceId=@workspace.Id" class="nav nav-link"><i class="fa fa-search"></i>View</a></td>
+      <td><a href="DeleteWorkspace/?WorkspaceId=@workspace.Id" class="nav nav-link"><i class="fa fa-remove"></i>Delete</a></td>
+      <td><a href="https://app.powerbi.com/groups/@workspace.Id/" class="nav nav-link"><i class="fa fa-paper-plane-o"></i>View in Power BI</a></td>
+    </tr>
+  }
+</table>

@@ -1,0 +1,123 @@
+﻿@model UserOwnsData.Services.WorkspaceViewModel
+
+@{
+  var workspace = Model.Workspace;
+  var dashboards = Model.Dashboards;
+  var reports = Model.Reports;
+  var datasets = Model.Datasets;
+  var dataflows = Model.Dataflows;
+}
+
+<div class="workspaces-toolbar">
+  <a id="back-to-workspaces-button" class="btn btn-sm" asp-controller="Home" asp-action="Workspaces"><i class="fa fa-backward"></i>Back to workspaces</a>
+</div>
+
+<h2>Workspace Details</h2>
+
+<table class="table table-bordered table-striped table-sm " style="width:auto">
+  <tr>
+    <td>Name</td>
+    <td>@workspace.Name</td>
+  </tr>
+  <tr>
+    <td>ID</td>
+    <td>@workspace.Id.ToString()</td>
+  </tr>
+  <tr>
+    <td>Dedicated Capacity</td>
+    <td>@workspace.IsOnDedicatedCapacity</td>
+  </tr>
+  <tr>
+    <td>Read-Only</td>
+    <td>@workspace.IsReadOnly</td>
+  </tr>
+</table>
+
+<hr />
+
+<h2>Workspace Resources</h2>
+<div class="row">
+
+  <div class="col-sm">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Dashboards</h4>
+        <div class="card-text">
+          @if (dashboards.Count == 0) {
+            <div class="no-content">You have no dashboards</div>
+          }
+          else {
+            <ul>
+              @foreach (var dashboard in dashboards) {
+                <li>@dashboard.DisplayName</li>
+              }
+            </ul>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Reports</h4>
+        <div class="card-text">
+          @if (reports.Count == 0) {
+            <div class="no-content">You have no reports</div>
+          }
+          else {
+            <ul>
+              @foreach (var report in reports) {
+                <li>@report.Name</li>
+              }
+            </ul>
+          }
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Datasets</h4>
+        <div class="card-text">
+          @if (datasets.Count == 0) {
+            <div class="no-content">You have no datasets</div>
+          }
+          else {
+            <ul>
+              @foreach (var dataset in datasets) {
+                <li>@dataset.Name</li>
+              }
+            </ul>
+          }
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Dataflows</h4>
+        <div class="card-text">
+          @if (dataflows.Count == 0) {
+            <div class="no-content">You have no dataflows</div>
+          }
+          else {
+            <ul>
+              @foreach (var dataflow in dataflows) {
+                <li>@dataflow.Name</li>
+              }
+            </ul>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

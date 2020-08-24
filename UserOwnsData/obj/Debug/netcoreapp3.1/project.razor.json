@@ -1,0 +1,75 @@
+{
+  "FilePath": "d:\\Git\\NetCore-UserOwnsData\\UserOwnsData\\UserOwnsData.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-3.0",
+    "LanguageVersion": "3.0",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-3.0"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 800
+  },
+  "RootNamespace": "UserOwnsData",
+  "Documents": [
+    {
+      "FilePath": "d:\\Git\\NetCore-UserOwnsData\\UserOwnsData\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Git\\NetCore-UserOwnsData\\UserOwnsData\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Git\\NetCore-UserOwnsData\\UserOwnsData\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Git\\NetCore-UserOwnsData\\UserOwnsData\\Views\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Git\\NetCore-UserOwnsData\\UserOwnsData\\Views\\Home\\Workspace.cshtml",
+      "TargetPath": "Views\\Home\\Workspace.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Git\\NetCore-UserOwnsData\\UserOwnsData\\Views\\Home\\Embed.cshtml",
+      "TargetPath": "Views\\Home\\Embed.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Git\\NetCore-UserOwnsData\\UserOwnsData\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Git\\NetCore-UserOwnsData\\UserOwnsData\\Views\\Home\\CreateWorkspace.cshtml",
+      "TargetPath": "Views\\Home\\CreateWorkspace.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Git\\NetCore-UserOwnsData\\UserOwnsData\\Views\\Home\\Workspaces.cshtml",
+      "TargetPath": "Views\\Home\\Workspaces.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Git\\NetCore-UserOwnsData\\UserOwnsData\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Git\\NetCore-UserOwnsData\\UserOwnsData\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}

@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "defaultProvider": "unpkg",
+  "libraries": [
+    {
+      "library": "jquery@3.5.1",
+      "destination": "wwwroot/lib/jquery/",
+      "files": [
+        "dist/jquery.min.js"
+      ]
+    },
+    {
+      "library": "bootstrap@4.5.2",
+      "destination": "wwwroot/lib/bootstrap/",
+      "files": [
+        "dist/css/bootstrap.min.css",
+        "dist/js/bootstrap.bundle.min.js"
+      ]
+    },
+    {
+      "library": "powerbi-client@2.13.3",
+      "destination": "wwwroot/lib/powerbi-client/",
+      "files": [
+        "dist/powerbi.min.js",
+        "dist/powerbi.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "font-awesome@4.7.0",
+      "destination": "wwwroot/lib/font-awesome/"
+    }
+  ]
+}
