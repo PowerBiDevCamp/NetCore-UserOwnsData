@@ -49,7 +49,7 @@ namespace UserOwnsData.Controllers {
     [HttpPost]
     public IActionResult CreateWorkspace(string WorkspaceName, string AddContent) {
       string appWorkspaceId = powerBiServiceApi.CreateAppWorkspace(WorkspaceName);
-      if (AddContent.ToLower().Equals("true")) {
+      if (AddContent.Equals("on")) {
         // upload sample PBIX file #1
         string pbixPath = this.hostEnvironment.WebRootPath + @"/PBIX/COVID-19 US.pbix";
         string importName = "COVID-19 US";
