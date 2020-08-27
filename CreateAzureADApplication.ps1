@@ -48,7 +48,7 @@ Out-File -FilePath $outputFile -Append -InputObject "    ""TenantId"": ""$tenant
 Out-File -FilePath $outputFile -Append -InputObject "    ""ClientId"": ""$appId"","
 Out-File -FilePath $outputFile -Append -InputObject "    ""ClientSecret"": ""$appSecret"","
 Out-File -FilePath $outputFile -Append -InputObject "    ""CallbackPath"": ""/signin-oidc"","
-Out-File -FilePath $outputFile -Append -InputObject "    ""SignedOutCallbackPath"": ""/signout-callback-oidc"","
+Out-File -FilePath $outputFile -Append -InputObject "    ""SignedOutCallbackPath"": ""/signout-callback-oidc"""
 Out-File -FilePath $outputFile -Append -InputObject "  },"
 Out-File -FilePath $outputFile -Append -InputObject "  ""PowerBi"": {"
 Out-File -FilePath $outputFile -Append -InputObject "    ""ServiceRootUrl"": ""https://api.powerbi.com/"""
