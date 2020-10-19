@@ -40,7 +40,7 @@ Add-AzureADApplicationOwner -ObjectId $aadApplication.ObjectId -RefObjectId $use
 
 $outputFile = "$PSScriptRoot\UserOwnsDataSampleApp.txt"
 Write-Host "Writing info to $outputFile"
-Out-File -FilePath $outputFile -Append -InputObject "{"
+Out-File -FilePath $outputFile -InputObject "{"
 Out-File -FilePath $outputFile -Append -InputObject "  ""AzureAd"": {"
 Out-File -FilePath $outputFile -Append -InputObject "    ""Instance"": ""https://login.microsoftonline.com/"","
 Out-File -FilePath $outputFile -Append -InputObject "    ""Domain"": ""$tenantDomain"","
